@@ -2,6 +2,7 @@ if(window.jQuery) {
     /**
      * ApiTimer
      * @module ApiTimer
+     * @version 1.0.0
      * @author Matthew Wright
      * @description ApiTimer is a general use interval and timeout timer that includes cookie, ajax call, and debug mode.
      * @requires jQuery 1.5+
