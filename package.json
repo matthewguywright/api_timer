@@ -1,0 +1,38 @@
+{
+  "name": "api_timer",
+  "version": "1.0.0",
+  "description": "Javascript Interval and Timeout Timer with Cookie and Ajax Call.",
+  "main": "src/js/api.timer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewguywright/api_timer.git"
+  },
+  "keywords": [
+    "timer",
+    "js",
+    "jquery",
+    "interval",
+    "ajax",
+    "api"
+  ],
+  "author": "Matthew Wright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewguywright/api_timer/issues"
+  },
+  "homepage": "https://github.com/matthewguywright/api_timer#readme",
+  "dependencies": {
+    "readable-stream": "^3.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-jsdoc3": "^2.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jsdoc": "^3.6.3"
+  }
+}
