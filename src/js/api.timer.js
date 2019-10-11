@@ -202,6 +202,7 @@ if(window.jQuery) {
          * @param ajaxOptions.dataType - Specifies the return type
          * @param ajaxOptions.type - The http method, i.e. POST, GET, DELETE, PUT
          * @param ajaxOptions.cache - Whether to cache the call or not
+         * @param ajaxOptions.crossDomain - Whether to use cross domain support
          * @returns {Promise<never>|*|{getAllResponseHeaders, abort, setRequestHeader, readyState, getResponseHeader, overrideMimeType, statusCode}}
          */
         tm.ajaxCall = function (ajaxOptions) {
