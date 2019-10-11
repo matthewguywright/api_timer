@@ -211,7 +211,8 @@ if(window.jQuery) {
                     async: ajaxOptions.async || true,
                     dataType: ajaxOptions.dataType || 'json',
                     type: ajaxOptions.type || 'POST',
-                    cache: ajaxOptions.cache || false
+                    cache: ajaxOptions.cache || false,
+                    crossDomain: ajaxOptions.crossDomain || false
                 });
             }
 
