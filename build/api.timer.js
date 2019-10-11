@@ -2,7 +2,6 @@ if(window.jQuery) {
     /**
      * ApiTimer
      * @module ApiTimer
-     * @version 1.0.0
      * @author Matthew Wright
      * @description ApiTimer is a general use interval and timeout timer that includes cookie, ajax call, and debug mode.
      * @requires jQuery 1.5+
@@ -203,6 +202,8 @@ if(window.jQuery) {
          * @param ajaxOptions.dataType - Specifies the return type
          * @param ajaxOptions.type - The http method, i.e. POST, GET, DELETE, PUT
          * @param ajaxOptions.cache - Whether to cache the call or not
+         * @param ajaxOptions.crossDomain - Whether to use cross domain support
+         * @param ajaxOptions.traditional - Switches traditional serialization on
          * @returns {Promise<never>|*|{getAllResponseHeaders, abort, setRequestHeader, readyState, getResponseHeader, overrideMimeType, statusCode}}
          */
         tm.ajaxCall = function (ajaxOptions) {
@@ -212,7 +213,9 @@ if(window.jQuery) {
                     async: ajaxOptions.async || true,
                     dataType: ajaxOptions.dataType || 'json',
                     type: ajaxOptions.type || 'POST',
-                    cache: ajaxOptions.cache || false
+                    cache: ajaxOptions.cache || false,
+                    crossDomain: ajaxOptions.crossDomain || false,
+                    traditional: ajaxOptions.traditional || false
                 });
             }
 
