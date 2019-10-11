@@ -203,6 +203,7 @@ if(window.jQuery) {
          * @param ajaxOptions.type - The http method, i.e. POST, GET, DELETE, PUT
          * @param ajaxOptions.cache - Whether to cache the call or not
          * @param ajaxOptions.crossDomain - Whether to use cross domain support
+         * @param ajaxOptions.traditional - Switches traditional serialization on
          * @returns {Promise<never>|*|{getAllResponseHeaders, abort, setRequestHeader, readyState, getResponseHeader, overrideMimeType, statusCode}}
          */
         tm.ajaxCall = function (ajaxOptions) {
@@ -213,7 +214,8 @@ if(window.jQuery) {
                     dataType: ajaxOptions.dataType || 'json',
                     type: ajaxOptions.type || 'POST',
                     cache: ajaxOptions.cache || false,
-                    crossDomain: ajaxOptions.crossDomain || false
+                    crossDomain: ajaxOptions.crossDomain || false,
+                    traditional: ajaxOptions.traditional || false
                 });
             }
 
